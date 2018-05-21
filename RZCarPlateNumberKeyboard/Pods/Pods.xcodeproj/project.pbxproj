@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0572BEE68F007A5F1EDEAE2098F16FFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		060E1A69ADCFEA3B647A1FB3CCCC0009 /* NSAttributedString+RZColorful.h in Headers */ = {isa = PBXBuildFile; fileRef = A16A9F94FEC7F8F7B573F6700A0D1AE8 /* NSAttributedString+RZColorful.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0B4A14622D9EB022163A580813A60E7A /* RZParagraphStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CCA40AB5875EBDDE776CCCD5F05D39B /* RZParagraphStyle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0D486DB997F298A5499D6F12D706B182 /* UIView+RZColorful.h in Headers */ = {isa = PBXBuildFile; fileRef = C0836E6077B43AAE16B701DB4FD7C217 /* UIView+RZColorful.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0E3027D3632B8521D659145B60B8860D /* RZColorful.h in Headers */ = {isa = PBXBuildFile; fileRef = C78CFFB2588B073AE34D07C8C62C5185 /* RZColorful.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		100DCBFE39E91CF7A296FABFAB4D7CC6 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EC07836B9E903068FAC77DC0CE1189 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		13635B78121B99E5C03C92506A161607 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = DE26D6426124FF408746F2B3031D5FBB /* MASViewAttribute.m */; };
+		138B7DDF6D350FB3740DB1F75DB772D0 /* UITextField+SelectedRange.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2733DB95423310C4975DF2C3A1225C /* UITextField+SelectedRange.m */; };
+		1551EDDFD639A7826AD1193D3CADAD71 /* Pods-RZCarPlateNumberKeyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 129563B4BEC3F95D95600EAAE17C7830 /* Pods-RZCarPlateNumberKeyboard-dummy.m */; };
+		212746967EEC88D0E3BC3A7354688449 /* RZImageAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4C05F34735EFA66CA591FF4CF788E /* RZImageAttachment.m */; };
+		214DF0B6664033C87D6B846599FB477A /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C4CB452056844572E2060A4C6FCFCDE1 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		22271A4A8F4F9BCBEFE693073ED4A4A6 /* UITextField+SelectedRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CF5AA6D8407681CAAAE6E0E4EA183ED /* UITextField+SelectedRange.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2DBB74B8B5DDB1F621433DD12BF35102 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FE01ED69200A833839D176973FA3AB1D /* MASViewConstraint.m */; };
+		3E8E6916C563B9CB12AA417275FC6EB3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABB8B648DF6682EC0D2AB6970BBB730 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		424685AAF760E222294AECDB09A85D9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		48FDDF3A5819DFDB6AE6467F1100EC4E /* RZImageAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 447C62A23FA955B30F563EEEC023F6C8 /* RZImageAttachment.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4AB827F4F049B1A5696309F5B0E72D9F /* RZColorfulAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = E9252A527EF6B28E0B4B48B39D60A238 /* RZColorfulAttribute.m */; };
+		523F69012549DCADB26D11EFB6593B5B /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = BB6E524124F286BD70B2D081746C1AAE /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5EBFADB0ACACA114B98082EBD8FDA650 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 676F8414F613E01EFDC3A46DFE1B976D /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		61CCEA01CBE8EFFA5515E7A0D8635AAE /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BA4C1BE36BEA449ABB9ABFD7C1814E /* MASCompositeConstraint.m */; };
+		6209E20926D79222E59F58B962BFAA1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		687A3AD51433CFA834E7590E2DA3CE1B /* UIView+RZContinueFirstResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = 30FC407DFE84C13907BD4B5562E4D04E /* UIView+RZContinueFirstResponder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		68F98758BA84B8EC3472A8C6FD646D16 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0506E411CE2CB44EB2254DB63977C51E /* Masonry-dummy.m */; };
+		6FBEF9BEF976F73220F5EA0246FA6674 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 7436A42864299524552D2F36BBAE498E /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		70F4AF440D6AF9DBCFE31F18F2B29A03 /* RZColorfulConferrer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CBE176D1DB7BA77936A7B5907F98B /* RZColorfulConferrer.m */; };
+		7AC0D0965486ED43C064F1BC177ACBC9 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = D934EDF7D77D4B85955D32A9E858C09A /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7BDDE51AF16FA53A09506EDB91E1C3C2 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 867F7C17E76993C5B409A78DD1DEDE9B /* NSArray+MASAdditions.m */; };
+		7F3CB81AEDF100B0233A554010786CD5 /* RZColorful-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF3D85FA191937BDF1691D575BA7A35 /* RZColorful-dummy.m */; };
+		81C1291C7ABA4942277F5756671AEE37 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F5954B191BE50BEC56DB1CC9A86 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		853B6D54075F242D59441836A0F1DDE3 /* RZParagraphStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6721B329B6F32E19EA61935D46240E4 /* RZParagraphStyle.m */; };
+		866C43BE26B70E85587A10593822F45D /* RZShadow.h in Headers */ = {isa = PBXBuildFile; fileRef = A40A7A7E7566BCDE17D9FE4E83F95012 /* RZShadow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		86B2DF4CC6E598AAA73D0CC6EEBA0E96 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3021D4563CF2CFD98CC84FE6C4B6F359 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		89450A58FD91E5B227171FC75160E4EA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 009C962BEAAD6D4081F275F9671EF821 /* MASConstraint.m */; };
+		8B091213F7750D10352E46B2D6C68F78 /* RZShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = F9028108FF8B3494D06A2634125E1408 /* RZShadow.m */; };
+		92711327ED7920702A69A828271279AE /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4485A5FFA1580ACE8ADD541F2B07A3F3 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		955BE39896CA35F2A585DC3309E5FDA5 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 432A388B013C0F9A956068AAA004969F /* MASLayoutConstraint.m */; };
+		9AB27A7F752AB644728D50B0228A070E /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = C3313DC585F4CCA76412CE0AABD9C828 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9BFAE06AC2F3B426C64EEDBF8C99A69E /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 619E205BD79904E42F348FA065D05AE2 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A1FA046FDFC42676D17FEC387B10D24A /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E047E5F76349C2B455E07132A88F81D8 /* View+MASAdditions.m */; };
+		B5EC5518E18B05A5334C49ABBF4C78F7 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 879ED587C5EA5025FD2C130848E620F7 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B9934C89A138D33D75EED02F09F7E432 /* UIView+RZColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 204225F9A9E5473A9FA229697DC30E06 /* UIView+RZColorful.m */; };
+		C6E83C10646E2DF6C83A578CE6AF0E5A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 330ED0819B3CF409031A98430999C4FD /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C8875B0A033C4E4CFD0FA6544909941A /* RZColorfulConferrer.h in Headers */ = {isa = PBXBuildFile; fileRef = EB10A522693D0DF11B82D73F2CB88C66 /* RZColorfulConferrer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CEE4DB106CE484B0EBF0517DDCE5C0B0 /* RZColorfulAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = A20BB976AC4559A3C49B60C5AEB12696 /* RZColorfulAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D7CE05A743B7ACD50796191FA442814C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E1722541A876191A2B4662385C9A6 /* ViewController+MASAdditions.m */; };
+		DB3B5E259252B2450CD23C4F8B580E01 /* NSAttributedString+RZColorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC21C54ED0614987AB0D24897E57BB3 /* NSAttributedString+RZColorful.m */; };
+		DF7F88B58B564EDF169EC0C9CF8E5124 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 272AEDE49D6D5BA62AEAE432B2F93D6E /* MASConstraintMaker.m */; };
+		F0B56A7D38A399A2F67F9920C9526A66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		F39F388E437D61F8968ACEE61BCCA9A7 /* UIView+RZContinueFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8615B953DBFE7D1C6002B7AF560652C7 /* UIView+RZContinueFirstResponder.m */; };
+		F861D2DADCE8A8F94F1DCB22EB8A6CE2 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 888B1A9C10F14A81FD5C27B45B3305E3 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FB415F79751F1A1F2203183C3CEE0723 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 49639BFD421CF1A2578F7AD540518B4A /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41A917C825D5B4287FEF51F30255AF28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DC8D9E02903E93BD0B2FEC9D846EA20;
+			remoteInfo = Masonry;
+		};
+		4BDEBC1568C701A67C66C4ADF1B828E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CAC6EC1DB87452099A335766EB03C13;
+			remoteInfo = RZColorful;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		009C962BEAAD6D4081F275F9671EF821 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		03224D2E88BA871E6F82A20AF6A45918 /* libRZColorful.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRZColorful.a; path = libRZColorful.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		03526F5954B191BE50BEC56DB1CC9A86 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		0506E411CE2CB44EB2254DB63977C51E /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		06C306138C6350C5C1B36AD610FBB517 /* RZColorful.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RZColorful.xcconfig; sourceTree = "<group>"; };
+		09CA5F647C776CB9A19AE66B3B703B2E /* Pods-RZCarPlateNumberKeyboard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RZCarPlateNumberKeyboard-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0B9E1722541A876191A2B4662385C9A6 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		0CCA40AB5875EBDDE776CCCD5F05D39B /* RZParagraphStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZParagraphStyle.h; path = RZColorfulExample/RZColorful/RZParagraphStyle.h; sourceTree = "<group>"; };
+		0DDB2F747B371F4EC99A3D7A65E1B722 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		108A9AC81FBBBB0A6E3EA0C12779522C /* Pods-RZCarPlateNumberKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RZCarPlateNumberKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		1256A3159173DC8B7CB3674D89C36483 /* libPods-RZCarPlateNumberKeyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RZCarPlateNumberKeyboard.a"; path = "libPods-RZCarPlateNumberKeyboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		129563B4BEC3F95D95600EAAE17C7830 /* Pods-RZCarPlateNumberKeyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RZCarPlateNumberKeyboard-dummy.m"; sourceTree = "<group>"; };
+		204225F9A9E5473A9FA229697DC30E06 /* UIView+RZColorful.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RZColorful.m"; path = "RZColorfulExample/RZColorful/UIView+RZColorful.m"; sourceTree = "<group>"; };
+		272AEDE49D6D5BA62AEAE432B2F93D6E /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		2BC21C54ED0614987AB0D24897E57BB3 /* NSAttributedString+RZColorful.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+RZColorful.m"; path = "RZColorfulExample/RZColorful/NSAttributedString+RZColorful.m"; sourceTree = "<group>"; };
+		3021D4563CF2CFD98CC84FE6C4B6F359 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		30FC407DFE84C13907BD4B5562E4D04E /* UIView+RZContinueFirstResponder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RZContinueFirstResponder.h"; path = "RZColorfulExample/RZColorful/UIView+RZContinueFirstResponder.h"; sourceTree = "<group>"; };
+		330ED0819B3CF409031A98430999C4FD /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		3CF5AA6D8407681CAAAE6E0E4EA183ED /* UITextField+SelectedRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+SelectedRange.h"; path = "RZColorfulExample/RZColorful/UITextField+SelectedRange.h"; sourceTree = "<group>"; };
+		432A388B013C0F9A956068AAA004969F /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		447C62A23FA955B30F563EEEC023F6C8 /* RZImageAttachment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZImageAttachment.h; path = RZColorfulExample/RZColorful/RZImageAttachment.h; sourceTree = "<group>"; };
+		4485A5FFA1580ACE8ADD541F2B07A3F3 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		47245C5CD960A8246FBF89B2E337B108 /* Pods-RZCarPlateNumberKeyboard-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RZCarPlateNumberKeyboard-frameworks.sh"; sourceTree = "<group>"; };
+		49639BFD421CF1A2578F7AD540518B4A /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		4ABB8B648DF6682EC0D2AB6970BBB730 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		4FF3D85FA191937BDF1691D575BA7A35 /* RZColorful-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RZColorful-dummy.m"; sourceTree = "<group>"; };
+		5994A024E200803941464DA6BFD05903 /* RZColorful-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RZColorful-prefix.pch"; sourceTree = "<group>"; };
+		5FE4C05F34735EFA66CA591FF4CF788E /* RZImageAttachment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZImageAttachment.m; path = RZColorfulExample/RZColorful/RZImageAttachment.m; sourceTree = "<group>"; };
+		619E205BD79904E42F348FA065D05AE2 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		676F8414F613E01EFDC3A46DFE1B976D /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		73BA4C1BE36BEA449ABB9ABFD7C1814E /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		7436A42864299524552D2F36BBAE498E /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		7B3CBE176D1DB7BA77936A7B5907F98B /* RZColorfulConferrer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZColorfulConferrer.m; path = RZColorfulExample/RZColorful/RZColorfulConferrer.m; sourceTree = "<group>"; };
+		8615B953DBFE7D1C6002B7AF560652C7 /* UIView+RZContinueFirstResponder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RZContinueFirstResponder.m"; path = "RZColorfulExample/RZColorful/UIView+RZContinueFirstResponder.m"; sourceTree = "<group>"; };
+		867F7C17E76993C5B409A78DD1DEDE9B /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		879ED587C5EA5025FD2C130848E620F7 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		888B1A9C10F14A81FD5C27B45B3305E3 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EB8C10198E6D288A502F7550038560B /* Pods-RZCarPlateNumberKeyboard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RZCarPlateNumberKeyboard-resources.sh"; sourceTree = "<group>"; };
+		9F925084EC698DB15BDBC3406422D6D3 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		A16A9F94FEC7F8F7B573F6700A0D1AE8 /* NSAttributedString+RZColorful.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+RZColorful.h"; path = "RZColorfulExample/RZColorful/NSAttributedString+RZColorful.h"; sourceTree = "<group>"; };
+		A20BB976AC4559A3C49B60C5AEB12696 /* RZColorfulAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZColorfulAttribute.h; path = RZColorfulExample/RZColorful/RZColorfulAttribute.h; sourceTree = "<group>"; };
+		A40A7A7E7566BCDE17D9FE4E83F95012 /* RZShadow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZShadow.h; path = RZColorfulExample/RZColorful/RZShadow.h; sourceTree = "<group>"; };
+		A867D0CE7CC70FEE95DB0F7686EAB2B1 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD892BD151069A95E313DB70FC6D9C28 /* Pods-RZCarPlateNumberKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RZCarPlateNumberKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		B3EC07836B9E903068FAC77DC0CE1189 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BB6E524124F286BD70B2D081746C1AAE /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		BE2733DB95423310C4975DF2C3A1225C /* UITextField+SelectedRange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+SelectedRange.m"; path = "RZColorfulExample/RZColorful/UITextField+SelectedRange.m"; sourceTree = "<group>"; };
+		C0836E6077B43AAE16B701DB4FD7C217 /* UIView+RZColorful.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RZColorful.h"; path = "RZColorfulExample/RZColorful/UIView+RZColorful.h"; sourceTree = "<group>"; };
+		C3313DC585F4CCA76412CE0AABD9C828 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		C4CB452056844572E2060A4C6FCFCDE1 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		C78CFFB2588B073AE34D07C8C62C5185 /* RZColorful.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZColorful.h; path = RZColorfulExample/RZColorful/RZColorful.h; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D934EDF7D77D4B85955D32A9E858C09A /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		DE26D6426124FF408746F2B3031D5FBB /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		E047E5F76349C2B455E07132A88F81D8 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		E6721B329B6F32E19EA61935D46240E4 /* RZParagraphStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZParagraphStyle.m; path = RZColorfulExample/RZColorful/RZParagraphStyle.m; sourceTree = "<group>"; };
+		E9252A527EF6B28E0B4B48B39D60A238 /* RZColorfulAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZColorfulAttribute.m; path = RZColorfulExample/RZColorful/RZColorfulAttribute.m; sourceTree = "<group>"; };
+		EB10A522693D0DF11B82D73F2CB88C66 /* RZColorfulConferrer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZColorfulConferrer.h; path = RZColorfulExample/RZColorful/RZColorfulConferrer.h; sourceTree = "<group>"; };
+		EED10B2F90CEA8A113FAD3C13F46C5F6 /* Pods-RZCarPlateNumberKeyboard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RZCarPlateNumberKeyboard-acknowledgements.plist"; sourceTree = "<group>"; };
+		F9028108FF8B3494D06A2634125E1408 /* RZShadow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZShadow.m; path = RZColorfulExample/RZColorful/RZShadow.m; sourceTree = "<group>"; };
+		FE01ED69200A833839D176973FA3AB1D /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FD8312A1AEB348F49A81C438DB25115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B56A7D38A399A2F67F9920C9526A66 /* Foundation.framework in Frameworks */,
+				6209E20926D79222E59F58B962BFAA1E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C84D22C429FA507D03E4EDF3CDA8C71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424685AAF760E222294AECDB09A85D9E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B13B6EB759B6D517A6E7A9F4B9A2FFF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0572BEE68F007A5F1EDEAE2098F16FFA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13C1710FBF8B0252A8ADEE1191BB301F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B233321CD6E51BF4FFEA904662AFCDD /* Pods-RZCarPlateNumberKeyboard */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		153B3A487232D6BC29031405B3FD2541 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				06C306138C6350C5C1B36AD610FBB517 /* RZColorful.xcconfig */,
+				4FF3D85FA191937BDF1691D575BA7A35 /* RZColorful-dummy.m */,
+				5994A024E200803941464DA6BFD05903 /* RZColorful-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RZColorful";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5A2318CDA0E4C61D4614C171271857E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6315A341D67D2218E7C8C4B7A1E6910 /* Masonry */,
+				D0BADE807892D1CB36E7A1668D885319 /* RZColorful */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		75AD3FFF3AE6D8D11D3102A9BFD0D842 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DDB2F747B371F4EC99A3D7A65E1B722 /* Masonry.xcconfig */,
+				0506E411CE2CB44EB2254DB63977C51E /* Masonry-dummy.m */,
+				9F925084EC698DB15BDBC3406422D6D3 /* Masonry-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				5A2318CDA0E4C61D4614C171271857E8 /* Pods */,
+				DF6D069D0C93957141CF4671B4A1657B /* Products */,
+				13C1710FBF8B0252A8ADEE1191BB301F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B233321CD6E51BF4FFEA904662AFCDD /* Pods-RZCarPlateNumberKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				09CA5F647C776CB9A19AE66B3B703B2E /* Pods-RZCarPlateNumberKeyboard-acknowledgements.markdown */,
+				EED10B2F90CEA8A113FAD3C13F46C5F6 /* Pods-RZCarPlateNumberKeyboard-acknowledgements.plist */,
+				129563B4BEC3F95D95600EAAE17C7830 /* Pods-RZCarPlateNumberKeyboard-dummy.m */,
+				47245C5CD960A8246FBF89B2E337B108 /* Pods-RZCarPlateNumberKeyboard-frameworks.sh */,
+				9EB8C10198E6D288A502F7550038560B /* Pods-RZCarPlateNumberKeyboard-resources.sh */,
+				108A9AC81FBBBB0A6E3EA0C12779522C /* Pods-RZCarPlateNumberKeyboard.debug.xcconfig */,
+				AD892BD151069A95E313DB70FC6D9C28 /* Pods-RZCarPlateNumberKeyboard.release.xcconfig */,
+			);
+			name = "Pods-RZCarPlateNumberKeyboard";
+			path = "Target Support Files/Pods-RZCarPlateNumberKeyboard";
+			sourceTree = "<group>";
+		};
+		D0BADE807892D1CB36E7A1668D885319 /* RZColorful */ = {
+			isa = PBXGroup;
+			children = (
+				A16A9F94FEC7F8F7B573F6700A0D1AE8 /* NSAttributedString+RZColorful.h */,
+				2BC21C54ED0614987AB0D24897E57BB3 /* NSAttributedString+RZColorful.m */,
+				C78CFFB2588B073AE34D07C8C62C5185 /* RZColorful.h */,
+				A20BB976AC4559A3C49B60C5AEB12696 /* RZColorfulAttribute.h */,
+				E9252A527EF6B28E0B4B48B39D60A238 /* RZColorfulAttribute.m */,
+				EB10A522693D0DF11B82D73F2CB88C66 /* RZColorfulConferrer.h */,
+				7B3CBE176D1DB7BA77936A7B5907F98B /* RZColorfulConferrer.m */,
+				447C62A23FA955B30F563EEEC023F6C8 /* RZImageAttachment.h */,
+				5FE4C05F34735EFA66CA591FF4CF788E /* RZImageAttachment.m */,
+				0CCA40AB5875EBDDE776CCCD5F05D39B /* RZParagraphStyle.h */,
+				E6721B329B6F32E19EA61935D46240E4 /* RZParagraphStyle.m */,
+				A40A7A7E7566BCDE17D9FE4E83F95012 /* RZShadow.h */,
+				F9028108FF8B3494D06A2634125E1408 /* RZShadow.m */,
+				3CF5AA6D8407681CAAAE6E0E4EA183ED /* UITextField+SelectedRange.h */,
+				BE2733DB95423310C4975DF2C3A1225C /* UITextField+SelectedRange.m */,
+				C0836E6077B43AAE16B701DB4FD7C217 /* UIView+RZColorful.h */,
+				204225F9A9E5473A9FA229697DC30E06 /* UIView+RZColorful.m */,
+				30FC407DFE84C13907BD4B5562E4D04E /* UIView+RZContinueFirstResponder.h */,
+				8615B953DBFE7D1C6002B7AF560652C7 /* UIView+RZContinueFirstResponder.m */,
+				153B3A487232D6BC29031405B3FD2541 /* Support Files */,
+			);
+			name = RZColorful;
+			path = RZColorful;
+			sourceTree = "<group>";
+		};
+		DF6D069D0C93957141CF4671B4A1657B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A867D0CE7CC70FEE95DB0F7686EAB2B1 /* libMasonry.a */,
+				1256A3159173DC8B7CB3674D89C36483 /* libPods-RZCarPlateNumberKeyboard.a */,
+				03224D2E88BA871E6F82A20AF6A45918 /* libRZColorful.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6315A341D67D2218E7C8C4B7A1E6910 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				888B1A9C10F14A81FD5C27B45B3305E3 /* MASCompositeConstraint.h */,
+				73BA4C1BE36BEA449ABB9ABFD7C1814E /* MASCompositeConstraint.m */,
+				7436A42864299524552D2F36BBAE498E /* MASConstraint.h */,
+				009C962BEAAD6D4081F275F9671EF821 /* MASConstraint.m */,
+				03526F5954B191BE50BEC56DB1CC9A86 /* MASConstraint+Private.h */,
+				879ED587C5EA5025FD2C130848E620F7 /* MASConstraintMaker.h */,
+				272AEDE49D6D5BA62AEAE432B2F93D6E /* MASConstraintMaker.m */,
+				C3313DC585F4CCA76412CE0AABD9C828 /* MASLayoutConstraint.h */,
+				432A388B013C0F9A956068AAA004969F /* MASLayoutConstraint.m */,
+				BB6E524124F286BD70B2D081746C1AAE /* Masonry.h */,
+				D934EDF7D77D4B85955D32A9E858C09A /* MASUtilities.h */,
+				B3EC07836B9E903068FAC77DC0CE1189 /* MASViewAttribute.h */,
+				DE26D6426124FF408746F2B3031D5FBB /* MASViewAttribute.m */,
+				676F8414F613E01EFDC3A46DFE1B976D /* MASViewConstraint.h */,
+				FE01ED69200A833839D176973FA3AB1D /* MASViewConstraint.m */,
+				619E205BD79904E42F348FA065D05AE2 /* NSArray+MASAdditions.h */,
+				867F7C17E76993C5B409A78DD1DEDE9B /* NSArray+MASAdditions.m */,
+				49639BFD421CF1A2578F7AD540518B4A /* NSArray+MASShorthandAdditions.h */,
+				C4CB452056844572E2060A4C6FCFCDE1 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				4ABB8B648DF6682EC0D2AB6970BBB730 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				330ED0819B3CF409031A98430999C4FD /* View+MASAdditions.h */,
+				E047E5F76349C2B455E07132A88F81D8 /* View+MASAdditions.m */,
+				4485A5FFA1580ACE8ADD541F2B07A3F3 /* View+MASShorthandAdditions.h */,
+				3021D4563CF2CFD98CC84FE6C4B6F359 /* ViewController+MASAdditions.h */,
+				0B9E1722541A876191A2B4662385C9A6 /* ViewController+MASAdditions.m */,
+				75AD3FFF3AE6D8D11D3102A9BFD0D842 /* Support Files */,
+			);
+			name = Masonry;
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BDF73468622762862D2FB76ED4AC0D8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F861D2DADCE8A8F94F1DCB22EB8A6CE2 /* MASCompositeConstraint.h in Headers */,
+				81C1291C7ABA4942277F5756671AEE37 /* MASConstraint+Private.h in Headers */,
+				6FBEF9BEF976F73220F5EA0246FA6674 /* MASConstraint.h in Headers */,
+				B5EC5518E18B05A5334C49ABBF4C78F7 /* MASConstraintMaker.h in Headers */,
+				9AB27A7F752AB644728D50B0228A070E /* MASLayoutConstraint.h in Headers */,
+				523F69012549DCADB26D11EFB6593B5B /* Masonry.h in Headers */,
+				7AC0D0965486ED43C064F1BC177ACBC9 /* MASUtilities.h in Headers */,
+				100DCBFE39E91CF7A296FABFAB4D7CC6 /* MASViewAttribute.h in Headers */,
+				5EBFADB0ACACA114B98082EBD8FDA650 /* MASViewConstraint.h in Headers */,
+				9BFAE06AC2F3B426C64EEDBF8C99A69E /* NSArray+MASAdditions.h in Headers */,
+				FB415F79751F1A1F2203183C3CEE0723 /* NSArray+MASShorthandAdditions.h in Headers */,
+				214DF0B6664033C87D6B846599FB477A /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				C6E83C10646E2DF6C83A578CE6AF0E5A /* View+MASAdditions.h in Headers */,
+				92711327ED7920702A69A828271279AE /* View+MASShorthandAdditions.h in Headers */,
+				86B2DF4CC6E598AAA73D0CC6EEBA0E96 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8031F5D14FBAD456C6AA88569BB2D3F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				060E1A69ADCFEA3B647A1FB3CCCC0009 /* NSAttributedString+RZColorful.h in Headers */,
+				0E3027D3632B8521D659145B60B8860D /* RZColorful.h in Headers */,
+				CEE4DB106CE484B0EBF0517DDCE5C0B0 /* RZColorfulAttribute.h in Headers */,
+				C8875B0A033C4E4CFD0FA6544909941A /* RZColorfulConferrer.h in Headers */,
+				48FDDF3A5819DFDB6AE6467F1100EC4E /* RZImageAttachment.h in Headers */,
+				0B4A14622D9EB022163A580813A60E7A /* RZParagraphStyle.h in Headers */,
+				866C43BE26B70E85587A10593822F45D /* RZShadow.h in Headers */,
+				22271A4A8F4F9BCBEFE693073ED4A4A6 /* UITextField+SelectedRange.h in Headers */,
+				0D486DB997F298A5499D6F12D706B182 /* UIView+RZColorful.h in Headers */,
+				687A3AD51433CFA834E7590E2DA3CE1B /* UIView+RZContinueFirstResponder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1CAC6EC1DB87452099A335766EB03C13 /* RZColorful */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90783548B544E7C40C73396775C72AE /* Build configuration list for PBXNativeTarget "RZColorful" */;
+			buildPhases = (
+				F88DAAA4827245C2396B5B97497FC91D /* Sources */,
+				8C84D22C429FA507D03E4EDF3CDA8C71 /* Frameworks */,
+				C8031F5D14FBAD456C6AA88569BB2D3F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RZColorful;
+			productName = RZColorful;
+			productReference = 03224D2E88BA871E6F82A20AF6A45918 /* libRZColorful.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34CAE1CB89EDBF2E53735CC5D4E5E69F /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				C4BE2DC1E815E7367562323223772531 /* Sources */,
+				6FD8312A1AEB348F49A81C438DB25115 /* Frameworks */,
+				BDF73468622762862D2FB76ED4AC0D8E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = A867D0CE7CC70FEE95DB0F7686EAB2B1 /* libMasonry.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F637AF2B53AA81969794C287ED245D49 /* Pods-RZCarPlateNumberKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EEC42C9057C4B8226F6C0E1DDA398E9 /* Build configuration list for PBXNativeTarget "Pods-RZCarPlateNumberKeyboard" */;
+			buildPhases = (
+				9E8AD6F3B3CD28AB627336FE990A3712 /* Sources */,
+				B13B6EB759B6D517A6E7A9F4B9A2FFF4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63F6771A212B887C6FC626BEA6DDFFAF /* PBXTargetDependency */,
+				B47421DD8B4AEA86C319F30B20E9C2C8 /* PBXTargetDependency */,
+			);
+			name = "Pods-RZCarPlateNumberKeyboard";
+			productName = "Pods-RZCarPlateNumberKeyboard";
+			productReference = 1256A3159173DC8B7CB3674D89C36483 /* libPods-RZCarPlateNumberKeyboard.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DF6D069D0C93957141CF4671B4A1657B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */,
+				F637AF2B53AA81969794C287ED245D49 /* Pods-RZCarPlateNumberKeyboard */,
+				1CAC6EC1DB87452099A335766EB03C13 /* RZColorful */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E8AD6F3B3CD28AB627336FE990A3712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1551EDDFD639A7826AD1193D3CADAD71 /* Pods-RZCarPlateNumberKeyboard-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4BE2DC1E815E7367562323223772531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61CCEA01CBE8EFFA5515E7A0D8635AAE /* MASCompositeConstraint.m in Sources */,
+				89450A58FD91E5B227171FC75160E4EA /* MASConstraint.m in Sources */,
+				DF7F88B58B564EDF169EC0C9CF8E5124 /* MASConstraintMaker.m in Sources */,
+				955BE39896CA35F2A585DC3309E5FDA5 /* MASLayoutConstraint.m in Sources */,
+				68F98758BA84B8EC3472A8C6FD646D16 /* Masonry-dummy.m in Sources */,
+				13635B78121B99E5C03C92506A161607 /* MASViewAttribute.m in Sources */,
+				2DBB74B8B5DDB1F621433DD12BF35102 /* MASViewConstraint.m in Sources */,
+				7BDDE51AF16FA53A09506EDB91E1C3C2 /* NSArray+MASAdditions.m in Sources */,
+				3E8E6916C563B9CB12AA417275FC6EB3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				A1FA046FDFC42676D17FEC387B10D24A /* View+MASAdditions.m in Sources */,
+				D7CE05A743B7ACD50796191FA442814C /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F88DAAA4827245C2396B5B97497FC91D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB3B5E259252B2450CD23C4F8B580E01 /* NSAttributedString+RZColorful.m in Sources */,
+				7F3CB81AEDF100B0233A554010786CD5 /* RZColorful-dummy.m in Sources */,
+				4AB827F4F049B1A5696309F5B0E72D9F /* RZColorfulAttribute.m in Sources */,
+				70F4AF440D6AF9DBCFE31F18F2B29A03 /* RZColorfulConferrer.m in Sources */,
+				212746967EEC88D0E3BC3A7354688449 /* RZImageAttachment.m in Sources */,
+				853B6D54075F242D59441836A0F1DDE3 /* RZParagraphStyle.m in Sources */,
+				8B091213F7750D10352E46B2D6C68F78 /* RZShadow.m in Sources */,
+				138B7DDF6D350FB3740DB1F75DB772D0 /* UITextField+SelectedRange.m in Sources */,
+				B9934C89A138D33D75EED02F09F7E432 /* UIView+RZColorful.m in Sources */,
+				F39F388E437D61F8968ACEE61BCCA9A7 /* UIView+RZContinueFirstResponder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63F6771A212B887C6FC626BEA6DDFFAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */;
+			targetProxy = 41A917C825D5B4287FEF51F30255AF28 /* PBXContainerItemProxy */;
+		};
+		B47421DD8B4AEA86C319F30B20E9C2C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RZColorful;
+			target = 1CAC6EC1DB87452099A335766EB03C13 /* RZColorful */;
+			targetProxy = 4BDEBC1568C701A67C66C4ADF1B828E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DA0BF4ADDD4E354C42A2CD1F87AE710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD892BD151069A95E313DB70FC6D9C28 /* Pods-RZCarPlateNumberKeyboard.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4303820496A55EEB31A1E9219EE5795B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06C306138C6350C5C1B36AD610FBB517 /* RZColorful.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RZColorful/RZColorful-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RZColorful;
+				PRODUCT_NAME = RZColorful;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5058E7DD5526A7F5430239638582865E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 108A9AC81FBBBB0A6E3EA0C12779522C /* Pods-RZCarPlateNumberKeyboard.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6033A2127E806DD5C86A515742F7445E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DDB2F747B371F4EC99A3D7A65E1B722 /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6681B1A324732F8264BB932595DFA69B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DDB2F747B371F4EC99A3D7A65E1B722 /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		703082A85162812D3B777E668767AD25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AED8E8881DA8B041D307FA388786D5DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06C306138C6350C5C1B36AD610FBB517 /* RZColorful.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RZColorful/RZColorful-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RZColorful;
+				PRODUCT_NAME = RZColorful;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EEC42C9057C4B8226F6C0E1DDA398E9 /* Build configuration list for PBXNativeTarget "Pods-RZCarPlateNumberKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5058E7DD5526A7F5430239638582865E /* Debug */,
+				1DA0BF4ADDD4E354C42A2CD1F87AE710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */,
+				703082A85162812D3B777E668767AD25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34CAE1CB89EDBF2E53735CC5D4E5E69F /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6033A2127E806DD5C86A515742F7445E /* Debug */,
+				6681B1A324732F8264BB932595DFA69B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90783548B544E7C40C73396775C72AE /* Build configuration list for PBXNativeTarget "RZColorful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AED8E8881DA8B041D307FA388786D5DF /* Debug */,
+				4303820496A55EEB31A1E9219EE5795B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
