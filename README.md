@@ -29,3 +29,9 @@ return ;
 NSLog(@"车牌号:%@", plateNo);
 }];
 ```
+
+![键盘样式(省区)](https://github.com/rztime/RZCarPlateNumberKeyboard/blob/master/%E5%8C%BA.png)
+![键盘样式(数字字母)](https://github.com/rztime/RZCarPlateNumberKeyboard/blob/master/%E6%95%B0%E5%AD%97%E5%AD%97%E6%AF%8D.png)
+
+![键盘样式(弹出窗样式)](https://github.com/rztime/RZCarPlateNumberKeyboard/blob/master/%E5%BC%B9%E5%87%BA.png)
+
