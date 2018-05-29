@@ -53,20 +53,40 @@
     return _imageView;
 }
 
+
 - (void)setValue:(RZCarPlateNumberKeyBoardValue *)value {
     _value = value;
     [self.textButton setTitle:value.text forState:UIControlStateNormal];
     self.imageView.image = value.image;
     [self.textButton setTitleColor:RGBGRAY(51) forState:UIControlStateNormal];
     
-    if (value.changeKeyBoardType) {
+    [self resetColor];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    self.textButton.backgroundColor = RGBGRAY(205);
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self resetColor];
+    
+    if (self.didClicked) {
+        self.didClicked(self.indexPath);
+    }
+}
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self resetColor];
+}
+
+
+- (void)resetColor {
+    if (_value.changeKeyBoardType) {
         self.textButton.backgroundColor = rgb(21,126,251);
         [self.textButton setTitleColor:RGBGRAY(255) forState:UIControlStateNormal];
-    } else if (value.deleteTextType) {
+    } else if (_value.deleteTextType) {
         self.textButton.backgroundColor = rgb(171, 178, 190);
     } else {
         self.textButton.backgroundColor = [UIColor colorWithWhite:1 alpha:1];
     }
 }
-
 @end

@@ -126,6 +126,11 @@
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     RZCarPlateNumberKeyBoardCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     cell.value = self.viewModel.dataSource[indexPath.section][indexPath.row];
+    __weak typeof(self) weakSelf = self;
+    cell.indexPath = indexPath;
+    cell.didClicked = ^(NSIndexPath *indexPath) {
+        [weakSelf collectionView:collectionView didSelectItemAtIndexPath:indexPath];
+    };
     return cell;
 }
 

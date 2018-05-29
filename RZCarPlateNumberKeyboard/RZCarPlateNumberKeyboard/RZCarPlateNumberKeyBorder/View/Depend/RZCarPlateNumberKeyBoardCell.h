@@ -13,4 +13,7 @@
 
 @property (nonatomic, strong) RZCarPlateNumberKeyBoardValue *value;
 
+@property (nonatomic, strong) NSIndexPath *indexPath;
+
+@property (nonatomic, copy) void(^didClicked)(NSIndexPath *indexPath);
 @end
