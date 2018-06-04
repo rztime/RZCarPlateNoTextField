@@ -68,14 +68,20 @@
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self resetColor];
-    
-    if (self.didClicked) {
-        self.didClicked(self.indexPath);
-    }
+    self.userInteractionEnabled = NO;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self resetColor];
+        
+        if (self.didClicked) {
+            self.didClicked(self.indexPath);
+        }
+        self.userInteractionEnabled = YES;
+    });
 }
 - (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self resetColor];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self resetColor];
+    });
 }
 
 
