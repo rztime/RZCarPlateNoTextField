@@ -24,6 +24,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     _plateTextField = [[RZCarPlateTextField alloc] initWithFrame:CGRectMake(30, 100, 250, 44)];
+//    _plateTextField.checkCarPlateValue = NO;
     _plateTextField.backgroundColor = [UIColor colorWithWhite:0 alpha:0.4];
     [self.view addSubview:_plateTextField];
     
@@ -34,6 +35,11 @@
     button.frame = CGRectMake(30, 200, 250, 44);
     
     [button addTarget:self action:@selector(plateAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    NSLog(@"1:%@", NSStringFromUIEdgeInsets(self.view.safeAreaInsets));
+    NSLog(@"2:%@", NSStringFromUIEdgeInsets([UIApplication sharedApplication].keyWindow.safeAreaInsets));
+    NSLog(@"3:%@", NSStringFromUIEdgeInsets(UIEdgeInsetsZero));
 }
 
 - (void)plateAction {

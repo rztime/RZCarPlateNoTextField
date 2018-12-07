@@ -87,7 +87,7 @@
             }
         }
         if (range.location > 0) {
-            if ([RZCarPlateNumberKeyBoardViewModel isPorvince:text]  && self.checkCarPlateValue) {
+            if ([RZCarPlateNumberKeyBoardViewModel isProvinceByNotFitst:text]  && self.checkCarPlateValue) {
                 self.carPlateKeyBoard.showProvinceKeyType = NO;
                 return ;
             }

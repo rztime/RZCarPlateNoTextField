@@ -33,7 +33,7 @@
                                       @[@"京",@"津",@"渝",@"沪",@"冀",@"晋",@"辽",@"吉",@"黑",@"苏"],
                                       @[@"浙",@"皖",@"闽",@"赣",@"鲁",@"豫",@"鄂",@"湘",@"粤",@"琼"],
                                       @[@"川",@"贵",@"云",@"陕",@"甘",@"青",@"蒙",@"桂",@"宁",@"新"],
-                                      @[@"A",@"藏",@"使",@"领",@"警",@"学",@"港",@"澳",@"delete"]
+                                      @[@"A",@"藏",@"使",@"领",@"警",@"学",@"港",@"澳", @"挂", @"delete"]
                                       ];
     [province enumerateObjectsUsingBlock:^(NSArray<NSString *> * _Nonnull objArray, NSUInteger idx, BOOL * _Nonnull stop) {
         NSMutableArray *items = [NSMutableArray new];
@@ -87,11 +87,15 @@
  判断一下，当前text是否是省份
  */
 + (BOOL)isPorvince:(NSString *)text {
-    return [self.provinces containsObject:text];
+    NSString *provinces = @"京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领ABCDEFGHIGKLMNOPQRSTUVWXYZ";
+    return [provinces containsString:text];
 }
-
-+ (NSArray *)provinces {
-   return @[@"京",@"津",@"渝",@"沪",@"冀",@"晋",@"辽",@"吉",@"黑",@"苏",@"浙",@"皖",@"闽",@"赣",@"鲁",@"豫",@"鄂",@"湘",@"粤",@"琼",@"川",@"贵",@"云",@"陕",@"甘",@"青",@"蒙",@"桂",@"宁",@"新",@"藏",@"使",@"领",@"警",@"学",@"港",@"澳"];
+/**
+ 判断一下，第二位及以后是否是省份
+ */
++ (BOOL)isProvinceByNotFitst:(NSString *)text {
+    NSString *provinces = @"京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领";
+    return [provinces containsString:text];
 }
 
 /**
@@ -99,11 +103,15 @@
  */
 + (NSString *)removeProvince:(NSString *)text {
     __block NSString *plate = text.copy;
-    NSArray *provinces = self.provinces;
+    NSArray *provinces = self.provincesOne;
     [provinces enumerateObjectsUsingBlock:^(NSString *  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         plate = [plate stringByReplacingOccurrencesOfString:obj withString:@""];
     }];
     return plate;
+}
+
++ (NSArray *)provincesOne {
+    return @[@"京", @"津", @"沪", @"渝", @"冀", @"豫", @"云", @"辽", @"黑", @"湘", @"皖", @"鲁", @"新", @"苏", @"浙", @"赣", @"鄂", @"桂", @"甘", @"晋", @"蒙", @"陕", @"吉", @"闽", @"贵", @"粤", @"青", @"藏", @"川", @"宁", @"琼", @"使", @"领"];
 }
 
 @end

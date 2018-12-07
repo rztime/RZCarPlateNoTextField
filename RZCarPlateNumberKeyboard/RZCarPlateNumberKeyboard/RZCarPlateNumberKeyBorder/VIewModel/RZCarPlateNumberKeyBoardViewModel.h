@@ -20,10 +20,14 @@
 @property (nonatomic, strong) NSMutableArray <NSArray <RZCarPlateNumberKeyBoardValue *> *> *dataSource;
 
 /**
- 判断一下，当前text是否是省份 
+ 判断一下，第一位是否是省份
  */
 + (BOOL)isPorvince:(NSString *)text;
 
+/**
+  判断一下，第二位及以后是否是省份 
+ */
++ (BOOL)isProvinceByNotFitst:(NSString *)text;
 /**
  如果text中包含有省份，则删除字段
  */
