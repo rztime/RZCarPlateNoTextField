@@ -14,6 +14,12 @@ iOS 车牌号键盘 对UITextField封装一个专用车牌号输入键盘
         * 以ViewController的形式，alert弹出框样式输入车牌号
 
 ## 使用RZCarPlateNoTextField
+* pod加入项目
+```
+    pod 'RZCarPlateNoTextField'
+```
+或将项目中Core文件夹拖入目标项目
+
 
 * RZCarPlateNoTextField
 ```
