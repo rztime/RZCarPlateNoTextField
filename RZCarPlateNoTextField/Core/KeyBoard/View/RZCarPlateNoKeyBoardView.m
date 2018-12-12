@@ -121,6 +121,7 @@
     
     if (model.rz_isChangedKeyBoardBtnType) {
         [self.viewModel rz_changeKeyBoardType:!self.viewModel.isProvince];
+        self.isProvince = self.viewModel.isProvince;
         [self.collectionView reloadData];
         return ;
     }

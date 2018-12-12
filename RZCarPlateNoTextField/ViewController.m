@@ -21,9 +21,17 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     RZCarPlateNoTextField *textfield = [[RZCarPlateNoTextField alloc] initWithFrame:CGRectMake(10, 100, 300, 50)];
-    textfield.backgroundColor = [UIColor colorWithWhite:0.7 alpha:1];
-//    textfield.rz_maxLength = 0;
-//    textfield.rz_checkCarPlateNoValue = NO;
+//    textfield.backgroundColor = [UIColor colorWithWhite:0.7 alpha:1];
+//    textfield.rz_maxLength = 0;  // 最大输入长度 （0 不限制）
+//    textfield.rz_checkCarPlateNoValue = NO;  // 是否需要校验车牌号输入规则
+//    textfield.rz_regexPlateNoIfYouNeed = ^NSString * _Nonnull(NSString * _Nonnull text) {
+//        // 你的校验方法,
+//        return text;
+//    };
+//    textfield.rz_textFieldEditingValueChanged = ^(RZCarPlateNoTextField * _Nonnull textField) {
+//        NSLog(@"输入变化回调：%@", textField.text);
+//    };
+//    [textfield rz_changeKeyBoard:NO]; // 代码控制显示字母 （YES：省份）
     [self.view addSubview:textfield];
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];

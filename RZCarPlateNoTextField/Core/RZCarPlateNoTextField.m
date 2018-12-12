@@ -57,6 +57,11 @@
     [self.keyBoardView rz_changeKeyBoard:showProvince];
 }
 
+- (BOOL)rz_isProvince {
+    _rz_isProvince = self.keyBoardView.isProvince;
+    return _rz_isProvince;
+}
+
 - (RZCarPlateNoKeyBoardView *)keyBoardView {
     if (!_keyBoardView) {
         _keyBoardView = [[RZCarPlateNoKeyBoardView alloc] init];
